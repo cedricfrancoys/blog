@@ -31,18 +31,15 @@
       <div class="container">
         <nav class="blog-nav">
           <a class="blog-nav-item" href="/">Home</a>
-          <a class="blog-nav-item active" href="/sections">Sections</a>
-          <a class="blog-nav-item" href="#">About</a>
+          <a class="blog-nav-item" href="/sections">Sections</a>
+          <a class="blog-nav-item" href="/">About</a>
         </nav>
       </div>
     </div>
 
     <div class="container">
 
-      <div class="blog-header">
-        <h1 class="blog-title" style="font-size: 32px; font-weight: normal;">Sharing <b>thoughts and strategies</b> about IT</h1>
-        <p class="lead blog-description">Cédric Françoys.</p>
-      </div>
+      <div class="blog-header" ng-include="'/blog/{{ section }}/header.html'"></div>
 
       <div class="row">
 
@@ -66,6 +63,10 @@
             <div ng-include="'/blog/{{ section }}/me.html'"></div>
             </p>
           </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <div ng-include="'/index.php?show=blog_history&section={{ section }}'"></div>
+          </div>          
           <div class="sidebar-module">
             <h4>Elsewhere</h4>
             <ol class="list-unstyled">

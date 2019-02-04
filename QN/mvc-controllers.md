@@ -32,8 +32,8 @@ along with some optional parameters.
 The advantage of such architecture is that it allows to be invoked in similar ways whatever the context:
 
 * server-side 
-	* using CLI: `php run.php --get=public:qinoa_tests --id=1 --test=2 --announce=true`
-	* inside the code: `run('get', 'public:qinoa_tests', ['id'=>1, 'test'=>2]);`
+  * using CLI: `php run.php --get=public:qinoa_tests --id=1 --test=2 --announce=true`
+  * inside the code: `run('get', 'public:qinoa_tests', ['id'=>1, 'test'=>2]);`
 * client-side through HTTP: `/index.php?get=qinoa_tests&id=1&test=2`
 
 
@@ -73,7 +73,7 @@ list($params, $providers) = QNLib::announce([
     ],
     'providers'     => ['orm', 'context'] 
 ]);
-``` 
+```
 
 And here the sample code that handles the valid requests:
 ```php

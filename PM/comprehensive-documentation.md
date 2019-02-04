@@ -11,11 +11,11 @@ In an Agile context, it is frequent, if not the routine, to adjust a piece of so
 
 And murphy's-law states that, most of the time, this happens just long enough after for you to have forgotten what and how it had been done.
 
-But abviouly, and rightfuly the customer expects that change to be made quickly as it is (or was) already there.
+But obviously, and rightfully the customer expects that change to be made quickly as it is (or was) already there.
 
 A well documented project empowers any contributor to the project to:
 * remember the setting, the environment and avoid 'small' adjustments that weigh down any manipulation
-* give the customer a good image and maintain confidence by showing a high quality of follow-up.
+* give the customer a good image and maintain confidence by showing high levels of control and follow-up quality.
 
 Of course, it is often difficult to justify the extra cost required for documenting. Depending on the receptivity of the customer, you must: either bill it as such; or increase the hourly rate (approximately 10%) to cover the additional time required.
 
@@ -64,10 +64,11 @@ $params = announce([
         'type'          => 'string'
      ],
     'c'  => [
-        'description'   => 'Optional argument with a default value (will always be present)',
+        'description'   => 'Optional argument with a default value',
         'type'          => 'string',
         'default'       => 'test'
      ]     
 ]
 ]);
 ```
+

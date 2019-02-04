@@ -57,12 +57,12 @@ Here is an example of such an `announce()` method from file `public/packages/dem
     list($params, $providers) = QNLib::announce([
         'description'   => 'Suggests bedtime stories based on a child age and interest',
         'params'        => [
-            'keywords' => [
+            'keywords' 		=> [
                 'description'   => "Keywords that catch your child attention",
                 'type'          => 'array',
                 'default'       => []
             ],
-            'age' => [
+            'age' 			=> [
                 'description'   => 'Your child age',
                 'type'          => 'integer',
                 'min'           => 4,
@@ -130,21 +130,16 @@ Finally, here is an excerpt of (a simplified version of) the `run()` method:
       // define valid operations specifications
       $operations = array(
           'do'    => array('kind' => 'ACTION_HANDLER','dir' => 'actions'),    
-          'get'   => array('kind' => 'DATA_PROVIDER','dir' => 'data'), 
-          'show'  => array('kind' => 'APPLICATION','dir' => 'apps')  
+          'get'   => array('kind' => 'DATA_PROVIDER', 'dir' => 'data'), 
+          'show'  => array('kind' => 'APPLICATION',   'dir' => 'apps')  
       );
       // retrieve services container instance   
       $container = Container::getInstance();    
       $context = $container->get('context');
       // adapt current request
-      $request = $context->httpRequest();
-      $request->body($body);
+      $context->httpRequest()->body($body);
       // extract parts from given operation
       $operation = explode(':', $operation);
-      if(count($operation) > 1) {
-          $visibility = array_shift($operation);
-          if($visibility == 'private') $resolved['visibility'] = $visibility;
-      }
       $resolved['operation'] = $operation[0];
       // include resolved script, if any
       if(isset($operations[$resolved['type']])) {
