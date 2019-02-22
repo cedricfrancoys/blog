@@ -20,9 +20,9 @@ So, basically we only have three types of operations which, in turn, can easily 
 ## Routing 
 The underlying idea suggested by this article is that it is possible to decompose an application logic into trivial controllers.
 
-To achieve so, all it takes is associate each route with an 'operation' and to define a single entry-point that routes the request to the appropriate controller through a 'run' method.
+To achieve so, all it takes is to associate each route with an 'operation' and to define a single entry-point that routes each request to the appropriate controller through a 'run' method.
 
-In a web server context, if we use index.php as entry-point, the query string of the URI should bear the following info:
+In a web server context, if we use `index.php` as entry-point, the query string of the URI should bear the following info:
 
     ?request_type=[public|private:]path_to_controller
 
@@ -52,7 +52,7 @@ In addition, it would be nice for every controller to provide a short descriptio
 Here is an example of such an `announce()` method from file `public/packages/demo/data/books/suggestions.php`
 
 ```php
-list($params, $providers) = QNLib::announce([
+list($params, $providers) = announce([
     'description'   => 'Fetches a resource ',
     'params'        => [
         'keywords' => [
@@ -162,21 +162,22 @@ public static function run($type, $operation, $body=[], $root=false) {
 }
 ```
 
+
+
 ## API
 
-API defines entry points to interract with the application
-
-The role of an API is to connect a set of routes to their asscoiated controllers.
+In such context, an API simply defines entry points to interact with the application by connecting a set of routes to the controllers they're associated to.
 
 2 kinds:
-1) action handlers
+
+1. action handlers
 	a) operations on objects (create, update, delete)
 	b) operations on App state 
 
-2) data providers
+1. data providers
 	a) operations on objects (find, read, list)
-		e.g.: GET /api/v1/user/321
+		e.g.: `GET /api/v1/user/321`
 	b) utilities (data generation based on provided params and/or App state)
-		examples 
-		GET /api/v1/sql-schema
-		POST /api/v1/graphql
+		examples: 
+		`GET /api/v1/sql-schema`  
+		`POST /api/v1/graphql`

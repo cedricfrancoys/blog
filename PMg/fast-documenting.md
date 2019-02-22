@@ -2,6 +2,8 @@
 
 This article originates from a simple question : What is the easiest way to publish content over the Internet, so that it can be shared with people involved in the development and the final use of the product ?
 
+![](https://i.imgur.com/0dhq23Pl.jpg)
+
 Here is a strategy that uses Typora, Github and MkDocs to produce an interactive documentation that can be deployed within minutes:
 
 Create a git repository, fill it with markdown-formatted files (.md) following the below structure : 

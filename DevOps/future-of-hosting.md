@@ -18,7 +18,7 @@ The idea is simple : a rent based on the consumption for the requests processing
 
 So, the question is : is there some added-value left in such context for offering hosting solutions ?
 
-Some software editors are taking advantage of the ease of virtualization : it allows them to offer SaaS (Software as a Service), which consists in selling instances with a custom configuration that perfectly suits a software stack, with a series of features to ease its management... and a significant margin (examples are odoo.sh or wordpress.com)
+Some software editors are taking advantage of the ease of virtualization : it allows them to offer SaaS (Software as a Service), which consists in re-selling instances with a custom configuration that perfectly suits a software stack along with a series of features to ease their management,  while making a 	substantial profit (Office 265, WordPress.com or Odoo.sh are some examples).
 
 ## RaaS is not IaaS
 

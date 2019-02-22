@@ -1,3 +1,4 @@
+# A strategy to route HTTP requests within the Back-End
 
 ## What is a route ?
 A route associates a URI with a resolver which indicates how to handle the request and might be as many things as a class name, a function, a script path or even another URI.
@@ -157,7 +158,7 @@ Finally, here is how the existing routes can be retrieved and returned as JSON w
     }
 
     $context->httpResponse()->body($result)->send();
-``` 
+```
 
 ## Read more
 Here are some links about how a few popular PHP frameworks deal with routes :
