@@ -183,3 +183,49 @@ So, at the end of the day, there are only 2 kinds of controllers:
         examples:   
         `GET /api/v1/sql-schema`  
         `POST /api/v1/graphql`  
+
+
+
+Finally, here is an example of a JSON file holding the required information in order to route API calls to their related routes : 
+
+```json
+{
+    "/users": {
+        "GET": {
+            "description": "Retrieve all users matching given criteria",
+            "operation": "?get=qinoa_model_collection&entity=core\\User"
+        }
+    },
+    "/user/:id": {
+        "GET": {
+            "description": "Retrieve fields values related to a given user",
+            "operation": "?get=qinoa_model_object&entity=core\\User"
+        },
+        "POST": {
+            "description": "Create a new user",
+            "operation": "?do=qinoa_model_create&entity=core\\User"
+        },
+        "PUT": {
+            "description": "Update a user",
+            "operation": "?do=qinoa_model_update&entity=core\\User"
+        },
+        "DELETE": {
+            "description": "Delete a user",
+            "operation": "?do=qinoa_model_delete&entity=core\\User"
+        }           
+    },
+    "/user": {
+        "POST": {
+            "description": "Create a new user",
+            "operation": "?do=qinoa_model_create&entity=core\\User"
+        }
+    },    
+    "/me": {
+        "GET": {
+            "description": "Return authentified user, if any",
+            "operation": "?get=qinoa_me"
+        }
+    }        
+}
+```
+
