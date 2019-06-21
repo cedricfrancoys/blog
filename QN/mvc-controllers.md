@@ -168,16 +168,16 @@ public static function run($type, $operation, $body=[], $root=false) {
 
 In such context, an API simply defines entry points to interact with the application by connecting a set of routes to the controllers they're associated to.
 
-2 kinds:
+So, at the end of the day, there are only 2 kinds of controllers:
 
 1. action handlers
-	a) operations on objects (create, update, delete)
-	b) operations on App state 
+    a) operations on objects (create, update, delete)
+    b) operations on App state 
 
 1. data providers
-	a) operations on objects (find, read, list)
-		e.g.: `GET /api/v1/user/321`
-	b) utilities (data generation based on provided params and/or App state)
-		examples: 
-		`GET /api/v1/sql-schema`  
-		`POST /api/v1/graphql`
+    a) operations on objects (find, read, list)
+        e.g.: `GET /api/v1/user/321`
+    b) utilities (data generation based on provided params and/or App state)
+        examples: 
+        `GET /api/v1/sql-schema`  
+        `POST /api/v1/graphql`
