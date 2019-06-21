@@ -31,5 +31,9 @@ The nice thing with markdown is that you immediately get a nicely formatted docu
 
 
 
-At last, to have a doc accessible through the internet and with search capabilities, you can take advantage of a [docker image](https://hub.docker.com/r/polinux/mkdocs/) that offers an out-of-the box version of [MkDocs](https://www.mkdocs.org/).
+At last, to have a doc accessible through the internet and with search capabilities, you can take advantage of a [docker image](https://hub.docker.com/r/polinux/mkdocs/) that offers an out-of-the box version of [MkDocs](https://www.mkdocs.org/) !
+
+
+
+Want to see it in action ? Just go to [http://doc.yesbabylon.com](http://doc.yesbabylon.com/)
 
