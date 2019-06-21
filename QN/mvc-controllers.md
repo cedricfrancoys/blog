@@ -172,14 +172,14 @@ So, at the end of the day, there are only 2 kinds of controllers:
 
 1. action handlers  
 
-    a) operations on objects (create, update, delete)
+    a) operations on objects (create, update, delete)  
     b) operations on App state 
 
 2. data providers  
 
-    a) operations on objects (find, read, list)
-        e.g.: `GET /api/v1/user/321`
+    a) operations on objects (find, read, list)  
+        e.g.: `GET /api/v1/user/321`  
     b) utilities (data generation based on provided params and/or App state)
-        examples: 
+        examples:   
         `GET /api/v1/sql-schema`  
-        `POST /api/v1/graphql`
+        `POST /api/v1/graphql`  
