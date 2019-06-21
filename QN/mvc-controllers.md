@@ -4,7 +4,7 @@ Notice: This post has been submitted to Toptal as part of the recognition of [PH
 
 ## Operations
 
-Should we be in a RESTful context or not, a request made to a server is always a solicitation to perform an operation and can be interpreted as one of those 3 verbs: 
+Should we be in a RESTful context or not, a request made to a server is always a solicitation to perform an operation and, as such, can be interpreted as one of those 3 verbs: 
 1. **'do'** something (Action handler)
 2. **'get'** something (Data provider)
 3. **'show'** something (App provider)
@@ -13,7 +13,7 @@ So, basically we only have three types of operations which, in turn, can easily 
 
 * POST : create (action handler)
 * GET : read (data or app provider)
-* PUT : replace	(action handler)
+* PUT : replace (action handler)
 * PATCH : update (action handler)
 * DELETE : delete (action handler)
 
