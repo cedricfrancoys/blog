@@ -170,11 +170,13 @@ In such context, an API simply defines entry points to interact with the applica
 
 So, at the end of the day, there are only 2 kinds of controllers:
 
-1. action handlers
+1. action handlers  
+
     a) operations on objects (create, update, delete)
     b) operations on App state 
 
-1. data providers
+2. data providers  
+
     a) operations on objects (find, read, list)
         e.g.: `GET /api/v1/user/321`
     b) utilities (data generation based on provided params and/or App state)
