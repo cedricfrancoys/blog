@@ -2,7 +2,7 @@
 
 Writing an API from scratch to fit the needs of an Application is often a challenging and thrilling experience: development teams may have defined a logic of their own that seems the best suited for the product, or maybe they even tried an exiting GraphQL implementation.
 
-![](https://i.imgur.com/f3MUsmzl.png)
+![](//i.imgur.com/f3MUsmzl.png)
 
 That being said, when the design phase of an API has been completed, even if being able to merge data from different sources has been planned from the very beginning,  it is not uncommon - for many good reasons (change of provider, documentation not provided before contracting a subscription, etc.) - to be confronted with data formats which are not compatible with the structures defined internally.
 

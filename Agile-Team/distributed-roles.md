@@ -3,7 +3,7 @@
 
 In an Agile organizational mode, one of the principles is to delegate the responsibility of the choices related to technical strategy to the Development Team.
 
-![](https://i.imgur.com/D1W9dCZl.jpg)
+![](//i.imgur.com/D1W9dCZl.jpg)
 
 By doing so, everyone is empowered, refines their estimates and only proposes approaches that they can undertake afterwards.
 

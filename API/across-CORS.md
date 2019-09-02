@@ -4,7 +4,7 @@
 
 Despite the fact that data exchange through API has become a common thing, many data providers still focus on back-end interactions (i.e. server to server communications) while more and more applications might interact directly through the final environment (which, in a web context, is often the customer web browser).
 
-![](https://i.imgur.com/rIraAL2.jpg)
+![](//i.imgur.com/rIraAL2.jpg)
 
 In the meanwhile web navigation security has been increasing, mostly to prevent the final user from accessing unwanted and potentially harmful content and or script behavior.
 

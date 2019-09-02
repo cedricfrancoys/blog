@@ -3,7 +3,7 @@
 
 This article aims to explore a way to enrich the native PHP capabilities in order to handle HTTP messages from and to RESTful APIs without the need of external dependencies.
 
-![](http://i.imgur.com/k81Snodl.jpg)
+![](//i.imgur.com/k81Snodl.jpg)
 
 ## Intro
 

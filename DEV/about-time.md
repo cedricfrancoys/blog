@@ -2,7 +2,7 @@
 
 This article explores how to deal with timezones in a client-server context.
 
-![](http://i.imgur.com/r12bpUUl.jpg) 
+![](//i.imgur.com/r12bpUUl.jpg) 
 
 ## Time is relative...
 

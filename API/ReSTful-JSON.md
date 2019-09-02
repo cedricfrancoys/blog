@@ -3,7 +3,7 @@
 
 For a long time, XML has reigned supreme over applications communications as a universally recognized format for data exchange. Back in the glory days of XUL, it even allowed to communicate with browsers, but for a time only.
 
-![](https://i.imgur.com/gfA0fqil.png)
+![](//i.imgur.com/gfA0fqil.png)
 
 As the future is trending towards the web, the ever-increasing possibilities of ECMA script (aka JavasScript), have favoured the emergence of a new format: JSON (Javascript Object Notation), which offers the advantage to be natively readable by any JS script (without the need of additional transformation).
 
